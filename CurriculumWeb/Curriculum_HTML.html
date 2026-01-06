@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+
+        .sidebar {
+            background: #ffffff;
+            border-left: 2px solid #ddd;
+            padding: 20px;
+        }
+
+        .photo-box {
+            width: 160px;
+            height: 160px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .photo-box p {
+            text-align: center;
+            padding-top: 60px;
+            color: #666;
+        }
+
+        /* ------------------------------------
+              ESTILOS ESPECIALES PARA PDF
+           ------------------------------------ */
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            /* Fuerza a que se mantengan las dos columnas */
+            .row {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+            }
+
+            .col-md-8, .col-md-4 {
+                float: none !important;
+            }
+
+            .col-md-8 {
+                width: 67% !important;
+            }
+
+            .col-md-4 {
+                width: 33% !important;
+            }
+
+            /* Quita márgenes innecesarios en PDF */
+            .container {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+
+            /* Evita que el texto se corte o comprima */
+            p, li, h1, h2, h3, h5 {
+                white-space: normal !important;
+            }
+
+            /* Permite que el contenido de la derecha sea independiente */
+            .sidebar {
+                border-left: 2px solid #000;
+            }
+
+            /* Evita saltos extraños */
+            * {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="col-md-8">
+                <h1 class="fw-bold">Carlos Abalo Cordero</h1>
+                <p class="text-muted">c.abalo.c@gmail.com | 646677165</p>
+                <p class="text-muted">GitHub: <a href="https://github.com/CarlosAbaloC"> https://github.com/CarlosAbaloC </a></p>
+                <h2>Sobre mí</h2>
+                <p>
+                    He completado la formación en Desarrollo de Aplicaciones Web y actualmente estoy trabajando en mi proyecto final, aplicando los conocimientos adquiridos.
+                    Además, cuento con formación en desarrollo multiplataforma y estoy buscando oportunidades para poner en práctica estas habilidades y seguir creciendo profesionalmente.
+                </p>
+
+                <section id="experience" class="mt-4">
+                    <h2>Experiencia Profesional</h2>
+                    <ul>
+                        <li><strong>Programador</strong> — GINSEG - Ciberinteligencia Cibervigilancia OSINT | Mar 2024 - May 2024</li>
+                        <li><strong>Programador</strong> — TOKYO-YA | Mar 2023 - Jun 2023</li>
+                    </ul>
+                </section>
+
+                <section id="education" class="mt-4">
+                    <h2>Formación</h2>
+                    <ul>
+                        <li>Desarrollador de Aplicaciones Web — IES Palomeras-Vallecas (2025)</li>
+                        <li>Desarrollador de Aplicaciones Multiplataforma — IES Rey Fernando VI (2023)</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="col-md-4 sidebar text-start">
+
+    
+                <!-- Habilidades -->
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML5 / CSS3 / JavaScript / Bootstrap</li>
+                    <li>JSON / Firebase / Java / SQL</li>
+                    <li>Python / Flutter / Dart / Kotlin</li>
+                    <li>MySQL / MongoDB / SAP B1 / PHP</li>
+                    <li>Git / GitHub / Visual Studio / Android</li>
+                </ul>
+
+                <!-- Fortalezas -->
+                <h3 class="mt-4">Fortalezas</h3>
+
+                <h5>Aprendizaje constante</h5>
+                <p>Busco mantenerme al día realizando cursos de programación y formándome de manera continua.</p>
+
+                <h5>Trabajo en equipo</h5>
+                <p>Me gusta colaborar con mis compañeros para encontrar la solución más óptima en cada proyecto.</p>
+
+                <h5>Resolución de problemas</h5>
+                <p>Disfruto enfrentando desafíos y encontrando soluciones efectivas, ya sea de forma autónoma o con ayuda externa cuando es necesario.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
